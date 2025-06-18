@@ -1,0 +1,1 @@
+// Optional: Future background logic can be added here

@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Smart Video Bookmark",
+  "version": "1.2",
+  "description": "Bookmark videos or sections on YouTube, Netflix, iBomma, and ChatGPT.",
+  "permissions": ["storage", "tabs", "scripting"],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "https://www.netflix.com/*",
+    "https://www.ibomma.com/*",
+    "https://chat.openai.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://www.netflix.com/*",
+        "https://www.ibomma.com/*",
+        "https://chat.openai.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 250px;
+  padding: 10px;
+}
+input, button {
+  width: 100%;
+  margin-top: 5px;
+  padding: 5px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  margin: 5px 0;
+  cursor: pointer;
+  color: blue;
+}
+li:hover {
+  text-decoration: underline;
+}
+#appName {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
